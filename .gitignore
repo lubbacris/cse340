@@ -14,3 +14,9 @@ node_modules
 
 # .DS_Store is only for Mac users
 **/.DS_Store
+
+# README.md file is not required, but can be helpful.
+README.md
+
+# does not need to be uploaded to github, but can be helpful for local use.
+pnpm-lock.yaml

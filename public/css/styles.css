@@ -1,6 +1,202 @@
-/******* Change Box Model ***************/
-*,
-*:before,
-*:after {
+/* STYLES & */
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222222;
+  line-height: 1.6;
+  background-image: url('/images/site/checkerboard.jpg'); 
+  background-repeat: repeat;
+  padding: 15px; 
+}
+
+/* White container holding the site */
+.page-wrapper {
+  background-color: #ffffff;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 4px solid #00c3e3;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h2 {
+  font-family: Georgia, 'Aptos Display', Times, serif;
+  margin-bottom: 10px;
+}
+
+/* HEADER & NAV */
+#top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.site-logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.account-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+nav {
+  background-color: #26262f;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* MAIN CONTENT & HERO SECTION */
+main {
+  padding: 20px;
+}
+
+.welcome-heading {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 15px;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.hero-details {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 10px;
+  z-index: 2;
+  text-align: left;
+  width: 100%;
+}
+
+.cyan-text {
+  color: #00768c; 
+  font-weight: bold;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #00b4d8;
+  color: #000000;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* MOBILE LAYOUT: BOTTOM CONTENT */
+.content-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Reviews ABOVE Upgrades */
+.reviews {
+  order: 1;
+  margin-bottom: 30px;
+}
+
+.reviews ul {
+  list-style-position: inside;
+  padding-left: 10px;
+}
+
+.reviews li {
+  margin-bottom: 15px;
+}
+
+.upgrades {
+  order: 2;
+}
+
+.upgrades-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.img-box {
+  background-color: #00b4d8;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #000;
+}
+
+.upgrades-gallery figcaption {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.upgrades-gallery a {
+  color: #0000ee;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  border-top: 2px solid #ccc;
+  margin-top: 20px;
+}
+
+/* LARGE SCREEN LAYOUT */
+@media screen and (min-width: 768px) {
+  
+  /* Hero section text floating over the image */
+  .hero {
+    display: block;
+  }
+  
+  .hero-details {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: auto;
+  }
+
+  .content-grid {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  /* Upgrades on LEFT, Reviews on RIGHT */
+  .upgrades {
+    order: 1;
+    flex: 1;
+  }
+
+  .reviews {
+    order: 2;
+    flex: 1;
+    margin-bottom: 0;
+  }
 }

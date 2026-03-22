@@ -1,1 +1,74 @@
-<h1>Lewis Karume</h1>
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head') %>
+
+<body>
+  <div class="page-wrapper"> 
+    
+    <%- include('./partials/header') %>
+    <%- include('./partials/navigation') %> <main>
+      <h1 class="welcome-heading">Welcome to CSE Motors!</h1>
+      
+      <section class="hero">
+        <div class="hero-details">
+          <h2 class="cyan-text">DMC Delorean</h2>
+          <p class="cyan-text">
+            3 Cup holders<br>
+            Superman doors<br>
+            Fuzzy dice!
+          </p>
+          <a href="#" class="btn-primary">Own Today</a>
+        </div>
+        <img src="/images/vehicles/delorean.jpg" alt="DMC Delorean" class="hero-img">
+      </section>
+
+      <div class="content-grid">
+        
+        <section class="upgrades">
+          <h2>Delorean Upgrades</h2>
+          <div class="upgrades-gallery">
+            <figure>
+              <div class="img-box">
+                <img src="/images/upgrades/flux-cap.png" alt="Flux Capacitor">
+              </div>
+              <figcaption><a href="#">Flux Capacitor</a></figcaption>
+            </figure>
+            <figure>
+              <div class="img-box">
+                <img src="/images/upgrades/flame.jpg" alt="Flame Decals">
+              </div>
+              <figcaption><a href="#">Flame Decals</a></figcaption>
+            </figure>
+            <figure>
+              <div class="img-box">
+                <img src="/images/upgrades/bumper_sticker.jpg" alt="Bumper Stickers">
+              </div>
+              <figcaption><a href="#">Bumper Stickers</a></figcaption>
+            </figure>
+            <figure>
+              <div class="img-box">
+                <img src="/images/upgrades/hub-cap.jpg" alt="Hub Caps">
+              </div>
+              <figcaption><a href="#">Hub Caps</a></figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="reviews">
+          <h2>DMC Delorean Reviews</h2>
+          <ul>
+            <li>"So fast it's almost like traveling in time." (4/5)</li>
+            <li>"Coolest ride on the road." (4/5)</li>
+            <li>"I'm feeling McFly!" (5/5)</li>
+            <li>"The most futuristic ride of our day." (4.5/5)</li>
+            <li>"80's livin and I love it!" (5/5)</li>
+          </ul>
+        </section>
+
+      </div>
+    </main>
+
+    <%- include('./partials/footer') %>
+  </div>
+</body>
+</html>

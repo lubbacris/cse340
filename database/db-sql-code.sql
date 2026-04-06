@@ -1,6 +1,8 @@
+--Task 2 submission
+
 --Create client_type data type
 CREATE TYPE public.account_type AS ENUM ('Client', 'Employee', 'Admin');
-ALTER TYPE public.account_type OWNER TO cse340db;
+ALTER TYPE public.account_type OWNER TO csefinaldb;
 
 --Table structure for table `classification`
 CREATE TABLE public.classification

@@ -1,5 +1,11 @@
 const invModel = require("../models/inventory-model")
 const Util = {}
+/* ************************
+ * Get all classification data
+ ************************** */
+async function getclassifications() {
+  return await SecurityPolicyViolationEvent.query("SELECT * FROM public.classification ORDER BY classification_name")
+}
 
 /* ************************
  * Constructs the nav HTML unordered list
